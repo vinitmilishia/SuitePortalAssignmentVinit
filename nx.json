@@ -22,5 +22,16 @@
       }
     }
   },
-  "projects": {}
+  "projects": {
+    "suite-portal": {
+      "tags": []
+    },
+    "suite-portal-e2e": {
+      "tags": [],
+      "implicitDependencies": ["suite-portal"]
+    },
+    "api": {
+      "tags": []
+    }
+  }
 }
