@@ -2,7 +2,7 @@ import { BadRequestException, Body, Controller, Post, Get, Param } from '@nestjs
 import { MaintenanceRequest } from '@suiteportal/api-interfaces';
 import { MaintenanceRequestService } from './maintenance-request.service';
 
-@Controller('maintenance-request')
+@Controller('maintenance-requests')
 export class MaintenanceRequestController {
 
   constructor(
