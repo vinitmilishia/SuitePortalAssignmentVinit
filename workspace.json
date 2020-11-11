@@ -25,9 +25,7 @@
               "apps/suite-portal/src/favicon.ico",
               "apps/suite-portal/src/assets"
             ],
-            "styles": [
-              "apps/suite-portal/src/styles.scss"
-            ],
+            "styles": ["apps/suite-portal/src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -165,6 +163,27 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "apps/api/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      }
+    },
+    "api-interfaces": {
+      "root": "libs/api-interfaces",
+      "sourceRoot": "libs/api-interfaces/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/api-interfaces/**/*.ts"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/api-interfaces/jest.config.js",
             "passWithNoTests": true
           }
         }

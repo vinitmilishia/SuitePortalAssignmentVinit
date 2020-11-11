@@ -12,34 +12,38 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSelectModule } from '@angular/material/select';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   imports: [
-    MatToolbarModule,
     MatButtonModule,
-    MatSnackBarModule,
-    MatTableModule,
-    MatGridListModule,
-    MatFormFieldModule,
-    MatInputModule,
+    MatCardModule,
     MatCheckboxModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatGridListModule,
     MatIconModule,
+    MatInputModule,
     MatListModule,
     MatSelectModule,
-    MatDialogModule,
+    MatSnackBarModule,
+    MatTableModule,
+    MatToolbarModule,
   ],
   exports: [
-    MatToolbarModule,
     MatButtonModule,
-    MatSnackBarModule,
-    MatTableModule,
-    MatFormFieldModule,
-    MatInputModule,
+    MatCardModule,
     MatCheckboxModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatGridListModule,
     MatIconModule,
+    MatInputModule,
     MatListModule,
     MatSelectModule,
-    MatDialogModule,
+    MatSnackBarModule,
+    MatTableModule,
+    MatToolbarModule,
   ],
 })
 export class SharedModule {}

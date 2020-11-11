@@ -1,5 +1,5 @@
 {
-  "npmScope": "suite-portal",
+  "npmScope": "suiteportal",
   "affected": {
     "defaultBase": "master"
   },
@@ -31,6 +31,9 @@
       "implicitDependencies": ["suite-portal"]
     },
     "api": {
+      "tags": []
+    },
+    "api-interfaces": {
       "tags": []
     }
   }

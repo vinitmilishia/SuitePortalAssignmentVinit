@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ALL_SERVICE_TYPES } from '@suiteportal/api-interfaces';
 
 @Component({
   selector: 'pm-home',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  serviceTypes = ALL_SERVICE_TYPES;
+
+  constructor() {
+    //
+  }
 
   ngOnInit(): void {
+    //
   }
 
 }
