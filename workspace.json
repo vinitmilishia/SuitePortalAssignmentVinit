@@ -25,7 +25,9 @@
               "apps/suite-portal/src/favicon.ico",
               "apps/suite-portal/src/assets"
             ],
-            "styles": ["apps/suite-portal/src/styles.scss"],
+            "styles": [
+              "apps/suite-portal/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
