@@ -17,7 +17,7 @@ export interface MaintenanceRequest {
   // Email of the requester
   email: string;
   // The unit # in the building
-  unit: string;
+  unitNumber: string;
   // The type of service being requested
   serviceType: ServiceType;
   // A summary of of the issue
@@ -30,7 +30,7 @@ export interface MaintenanceRequest {
 ## Requirements:
 
 1. Admin users should be able to go to the `/admin` page and login to a special admin account
-2. Resident users should do not need an account to submit the maintenance request form
+2. Resident users should not need an account to submit the maintenance request form
 3. The maintenance request form should have fields to set all the properties of the MaintenanceRequest interface. The form should submit to `POST /api/maintenance-requests`
 4. [lowdb](https://github.com/typicode/lowdb) is used by the API server as a simple file system database
 5. The request form should be implemented using [Angular's Reactive Forms](https://angular.io/guide/reactive-forms)
@@ -45,13 +45,13 @@ Bonus Requirements:
 
 We do not discourage the use of 3rd-party dependencies, although if you decide to add any dependencies please provide a written reasoning for:
 1. Why you needed this package
-2. why you chose this specific package
+2. Why you chose this specific package
 
 ## Use what you know
 
 We have provided this Angular/NESTJS starter project intended to give you a good head start.
 
-Although, we are looking to see you at your best - as such, please you the languages and frameworks you are most comfortable with. So if you would feel more comfortable developing this app using React or VueJS, please do not feel pressure to use Angular.
+Although, we are looking to see you at your best - as such, please use the languages and frameworks you are most comfortable with. So if you would feel more comfortable developing this app using React or VueJS, please do not feel pressure to use Angular.
 
 ## Show us your strengths
 

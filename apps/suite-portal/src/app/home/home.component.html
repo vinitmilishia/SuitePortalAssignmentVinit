@@ -10,6 +10,21 @@
       <mat-card-content>
         <form class="maint-form">
           <mat-form-field>
+            <mat-label>Apartment Unit #</mat-label>
+            <input matInput type="text" />
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Requester Name</mat-label>
+            <input matInput type="text" />
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Requester Email</mat-label>
+            <input matInput type="email" />
+          </mat-form-field>
+
+          <mat-form-field>
             <mat-label>Service Type</mat-label>
             <mat-select>
               <mat-option *ngFor="let serviceType of serviceTypes" [value]="serviceType">

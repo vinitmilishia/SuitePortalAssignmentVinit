@@ -18,7 +18,7 @@ export interface MaintenanceRequest {
   // Email of the requester
   email: string;
   // The unit # in the building
-  unit: string;
+  unitNumber: string;
   // The type of service being requested
   serviceType: ServiceType;
   // A summary of of the issue
