@@ -1,9 +1,11 @@
 # SuitePortal
 
-This repository is a monorepo containing the code for an API server and frontend Web App. 
+This repository is intended to be a starter project for your assignment.
 
-The API server is built using the [NESTJS](https://nestjs.com/) framework
-The Web App is built using the [Angular](https://angular.io/) framework
+Please review `./Requirements.md` for more detailed instructions about this assignment.
+
+* The API server is built using the [NESTJS](https://nestjs.com/) framework
+* The Web App is built using the [Angular](https://angular.io/) framework
 
 You can build the project using the [Nx](https://nx.dev/) command line tools
 
