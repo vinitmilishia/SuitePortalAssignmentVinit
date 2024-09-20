@@ -1,3 +1,70 @@
 {
-  "requests": []
+  "requests": [
+    {
+      "id": "C2LjuPYE89",
+      "unitNumber": "1",
+      "name": "John Doe",
+      "email": "jdoe@gmail.com",
+      "serviceType": "electrical",
+      "summary": "Main Switch not working.",
+      "details": "Main switch board broken.",
+      "submittedAt": "2024-09-20T06:27:42.341Z",
+      "closed": false
+    },
+    {
+      "id": "CEkqVTKVcx",
+      "unitNumber": "3",
+      "name": "Ryan",
+      "email": "ryan@gmail.com",
+      "serviceType": "general",
+      "summary": "Driveway potholes",
+      "details": "big pot hole on driveway",
+      "submittedAt": "2024-09-20T06:34:48.317Z",
+      "closed": false
+    },
+    {
+      "id": "dKe9Tz736N",
+      "unitNumber": "9",
+      "name": "Mike",
+      "email": "mike@gmail.com",
+      "serviceType": "plumbing",
+      "summary": "tap broken",
+      "details": "kitchen sink tap broken.",
+      "submittedAt": "2024-09-20T06:50:52.652Z",
+      "closed": false
+    },
+    {
+      "id": "xbRR8bmd6G",
+      "unitNumber": "11",
+      "name": "Jason",
+      "email": "jsaon@gmail.com",
+      "serviceType": "pest-control",
+      "summary": "bedbug issue",
+      "details": "bedbug issue in bedrooms.",
+      "submittedAt": "2024-09-20T06:52:19.947Z",
+      "closed": false
+    },
+    {
+      "id": "awr4mnHmkP",
+      "unitNumber": "7",
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "serviceType": "electrical",
+      "summary": "asd",
+      "details": "asfas",
+      "submittedAt": "2024-09-20T16:26:41.240Z",
+      "closed": true
+    },
+    {
+      "id": "pSjUdSJOkY",
+      "unitNumber": "12",
+      "name": "Annie",
+      "email": "annie@gmail.com",
+      "serviceType": "general",
+      "summary": "Front door issue",
+      "details": "Front Door not closed properly.",
+      "submittedAt": "2024-09-20T17:41:48.998Z",
+      "closed": false
+    }
+  ]
 }

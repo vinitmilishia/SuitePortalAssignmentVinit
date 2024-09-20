@@ -2,9 +2,11 @@
   <mat-label>Resident Portal</mat-label>
   <a mat-button [routerLink]="'home'">Home</a>
   <div class="spacer"></div>
-  <a class="admin" mat-button [routerLink]="'admin'">Admin</a>
+  <a class="admin" *ngIf="!isAdminDashboard && !token" mat-button [routerLink]="'admin'">Admin</a>
+  <a *ngIf="token && !isAdminDashboard" mat-button [routerLink]="'admin-dashboard'">Admin Dashboard</a>
+  <button *ngIf="isAdminDashboard && token" mat-button (click)="logout()">Logout</button>
 </mat-toolbar>
-
+<h1>Welcome to suite-portal!</h1>
 <main>
   <router-outlet></router-outlet>
 </main>

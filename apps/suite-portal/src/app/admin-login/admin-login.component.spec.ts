@@ -1,32 +1,32 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HomeComponent } from './home.component';
+import { AdminLoginComponent } from './admin-login.component';
 import { SharedModule } from '../shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatLabel } from '@angular/material/form-field';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
-describe('HomeComponent', () => {
-  let component: HomeComponent;
-  let fixture: ComponentFixture<HomeComponent>;
+describe('AdminLoginComponent', () => {
+  let component: AdminLoginComponent;
+  let fixture: ComponentFixture<AdminLoginComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [HomeComponent],
+      declarations: [ AdminLoginComponent ],
       imports: [
         SharedModule,
         ReactiveFormsModule,
         HttpClientModule,
+        RouterTestingModule,
         BrowserAnimationsModule
       ],
-      schemas: [NO_ERRORS_SCHEMA],
-    }).compileComponents();
+    })
+    .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomeComponent);
+    fixture = TestBed.createComponent(AdminLoginComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -36,17 +36,13 @@ describe('HomeComponent', () => {
   });
 
   it('should submit valid form', () => {
-    component.maintenanceForm.setValue({
-      unitNumber: '101',
-      name: 'John Doe',
-      email: 'john@example.com',
-      serviceType: 'Plumbing',
-      summary: 'Leaky faucet',
-      details: 'Water is dripping',
+    component.loginForm.setValue({
+      username: 'admin',
+      password: 'password',
     });
 
     component.onSubmit();
 
-    expect(component.maintenanceForm.valid).toBe(true);
+    expect(component.loginForm.valid).toBe(true);
   });
 });

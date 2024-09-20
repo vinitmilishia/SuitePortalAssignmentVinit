@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home.component';
 import { SharedModule } from '../shared.module';
+import { AdminLoginComponent } from './admin-login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -12,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  declarations: [HomeComponent],
-  exports: [HomeComponent]
+  declarations: [AdminLoginComponent],
+  exports: [AdminLoginComponent]
 })
-export class HomeModule { }
+export class AdminLoginModule { }

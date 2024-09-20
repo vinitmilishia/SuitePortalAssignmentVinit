@@ -19,5 +19,8 @@
       "@suiteportal/api-interfaces": ["libs/api-interfaces/src/index.ts"]
     }
   },
+  "include": [
+    "cypress/**/*.ts" // Include all TypeScript files in the cypress directory
+  ],
   "exclude": ["node_modules", "tmp"]
 }

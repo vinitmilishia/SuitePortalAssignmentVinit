@@ -1,0 +1,22 @@
+<h1>Admin Dashboard</h1>
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let request of maintenanceRequests">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                Unit #: {{ request.unitNumber }} : {{ request.summary }}
+            </mat-panel-title>
+            <mat-panel-description>
+            <button mat-button color="warn" (click)="closeMaintenanceRequest(request.id)">Close</button>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+    
+        <div>
+            <p><strong>Name:</strong> {{ request.name }}</p>
+            <p><strong>Email:</strong> {{ request.email }}</p>
+            <p><strong>Service Type:</strong> {{ request.serviceType }}</p>
+            <p><strong>Details:</strong> {{ request.details }}</p>
+            <p><strong>Submitted At:</strong> {{ request.submittedAt | date:'short' }}</p>
+        </div>
+    </mat-expansion-panel>
+</mat-accordion>
+  

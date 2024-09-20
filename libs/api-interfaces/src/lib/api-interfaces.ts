@@ -13,6 +13,7 @@ export const ALL_SERVICE_TYPES = [
 ];
 
 export interface MaintenanceRequest {
+  id: string;
   // Name of the requester
   name: string;
   // Email of the requester
@@ -27,3 +28,12 @@ export interface MaintenanceRequest {
   details?: string;
 }
 
+export interface AdminCredentials {
+  username: string;
+  password: string;
+}
+
+export interface AdminResponse {
+  message: string;
+  token?: string; // JWT Token
+}
